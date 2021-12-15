@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ionic App</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+  <body>
+
+
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-buttons slot="start"> <!--Indicamos donde queremos ubicar nuestro icono-->
+                    <ion-button>
+                        <ion-icon name="logo-ionic"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+                <!--A diferencia de html web tenemos propiedades propias de Ionic-->
+                <ion-title>
+                    App de productos
+                </ion-title>
+                <ion-buttons slot="end"> <!--Indicamos donde queremos ubicar nuestro icono-->
+                    <ion-button>
+                        <p style="margin-right: 2.5em;">Total: $1504</p>
+                        <ion-icon name="cart"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>
+                                    Nuevo Producto
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <ion-item>
+                                    <ion-label>
+                                        Nombre producto
+                                    </ion-label>
+                                    <ion-input type="text">
+
+                                    </ion-input>
+                                </ion-item>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+
+    
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>  
+</body>
+</html>
