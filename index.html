@@ -13,7 +13,7 @@
 
     <ion-app>
         <ion-header>
-            <ion-toolbar>
+            <ion-toolbar color="primary">
                 <ion-buttons slot="start"> <!--Indicamos donde queremos ubicar nuestro icono-->
                     <ion-button>
                         <ion-icon name="logo-ionic"></ion-icon>
@@ -43,23 +43,45 @@
                                 </ion-card-title>
                             </ion-card-header>
                             <ion-card-content>
-                                <ion-item>
-                                    <ion-label>
+                                <ion-item class="ion-margin-vertical">
+                                    <ion-label position="floating">
                                         Nombre producto
                                     </ion-label>
-                                    <ion-input type="text">
+                                    <ion-input type="text"id="nombreProducto">
 
                                     </ion-input>
                                 </ion-item>
+                                <ion-item>
+                                    <ion-label position="floating">
+                                        Precio
+                                    </ion-label>
+                                    <ion-input type="number" id="precio">
+
+                                    </ion-input>
+                                </ion-item>
+
+                                <ion-button color="success"  id="btnGuardar">
+                                    <ion-icon name="add-circle" slot="start"></ion-icon>
+                                    Guardar
+                                </ion-button>
+                                <ion-button color="warning"  id="btnLimpiar">
+                                    <ion-icon name="trash-bin-outline" slot="start"></ion-icon>
+                                    Limpiar
+                                </ion-button>
                             </ion-card-content>
                         </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list id='listaProductos'></ion-list>
                     </ion-col>
                 </ion-row>
             </ion-grid>
         </ion-content>
     </ion-app>
 
-    
+<script src="app.js"></script>    
 <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>  
 </body>
